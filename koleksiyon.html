@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lefendir You | Koleksiyon</title>
+  <meta name="description" content="Lefendir You koleksiyonu: Vanilya odaklı Eau de Parfum, İstanbul’dan dünyaya uzanan bir lüks deneyim.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: "#0a0a0a",
+            gold: "#d4af37",
+            vanilla: "#f3e5ab"
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', "serif"],
+            body: ['"Lato"', "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { --noir:#0a0a0a; --gold:#d4af37; --vanilla:#f3e5ab; }
+    body { background-color: var(--noir); }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        radial-gradient(600px 600px at 85% 10%, rgba(212,175,55,0.12), transparent 60%),
+        radial-gradient(500px 500px at 10% 30%, rgba(243,229,171,0.08), transparent 60%),
+        linear-gradient(120deg, rgba(255,255,255,0.03), transparent 40%);
+      opacity: 0.7;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .parallax-hero {
+      background-image: url("WhatsApp Image 2026-05-23 at 14.32.04 (1).jpeg");
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    @media (max-width: 768px) {
+      .parallax-hero { background-attachment: scroll; }
+    }
+    .fade-up {
+      animation: fadeUp 1.1s ease-out both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="font-body text-vanilla antialiased">
+  <div class="relative z-10">
+    <header id="site-header" class="sticky top-0 z-50 bg-transparent transition duration-300">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="WhatsApp Image 2026-05-23 at 14.32.04 (2).jpeg" alt="Lefendir You logo" class="h-10 w-10 rounded-full object-cover ring-1 ring-gold/60">
+          <span class="font-display text-xs uppercase tracking-[0.3em] text-gold">Lefendir You</span>
+        </a>
+        <nav class="flex flex-wrap items-center gap-5 text-[11px] uppercase tracking-[0.3em] text-vanilla/80">
+          <a href="index.html" class="transition hover:text-gold">Home</a>
+          <a href="koleksiyon.html" class="transition hover:text-gold">Koleksiyon</a>
+          <a href="hakkimizda.html" class="transition hover:text-gold">Hakkımızda</a>
+          <a href="iletisim.html" class="transition hover:text-gold">İletişim</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="relative h-[60vh] min-h-[420px] overflow-hidden">
+        <div class="parallax-hero absolute inset-0"></div>
+        <div class="absolute inset-0 bg-noir/65"></div>
+        <div class="relative z-10 mx-auto flex h-full max-w-5xl items-center px-6">
+          <div class="fade-up">
+            <p class="text-xs uppercase tracking-[0.4em] text-gold">Koleksiyon</p>
+            <h1 class="mt-4 font-display text-4xl text-vanilla md:text-6xl">Vanilyanın Altın İmzası</h1>
+            <p class="mt-4 max-w-2xl text-vanilla/80">Lefendir You Eau de Parfum, sıcak vanilya katmanlarını amber ve tonka ile birleştirerek geceye uygun bir ihtişam sunar.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative py-24">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="grid gap-12 lg:grid-cols-[1.2fr_0.8fr]">
+            <div>
+              <h2 class="font-display text-3xl text-vanilla md:text-4xl">Eau de Parfum Detayları</h2>
+              <p class="mt-4 text-vanilla/80">Yoğun, kadifemsi ve uzun ömürlü. İlk anda parlak bir vanilya orkidesi, ardından bourbon vanilyanın sıcak kalbi ve dipte amberin şehvetli izi.</p>
+              <div class="mt-8 grid gap-6 sm:grid-cols-3">
+                <div class="rounded-2xl border border-vanilla/10 bg-white/5 p-5">
+                  <p class="text-xs uppercase tracking-[0.3em] text-gold">Üst Notalar</p>
+                  <p class="mt-3 text-vanilla/75">Bergamot, karabiber, vanilya orkidesi</p>
+                </div>
+                <div class="rounded-2xl border border-vanilla/10 bg-white/5 p-5">
+                  <p class="text-xs uppercase tracking-[0.3em] text-gold">Kalp Notalar</p>
+                  <p class="mt-3 text-vanilla/75">Bourbon vanilya, badem çiçeği, amber</p>
+                </div>
+                <div class="rounded-2xl border border-vanilla/10 bg-white/5 p-5">
+                  <p class="text-xs uppercase tracking-[0.3em] text-gold">Dip Notalar</p>
+                  <p class="mt-3 text-vanilla/75">Tonka fasulyesi, sandal ağacı, misk</p>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-3xl border border-vanilla/10 bg-gradient-to-b from-black/80 to-black/40 p-8">
+              <h3 class="font-display text-2xl text-vanilla">Sipariş ve Konsültasyon</h3>
+              <p class="mt-4 text-vanilla/75">Sizi ve kokuyu en iyi yansıtacak öneriler için İstanbul’daki ekibimizle iletişime geçin.</p>
+              <a href="https://wa.me/905465567981?text=Merhaba,%20Lefendir%20You%20parf%C3%BCm%20sipari%C5%9Fi%20vermek%20istiyorum." class="mt-8 inline-flex w-full items-center justify-center rounded-full bg-gold px-8 py-4 text-sm uppercase tracking-[0.3em] text-noir transition hover:brightness-110">Sipariş Ver</a>
+              <p class="mt-4 text-xs uppercase tracking-[0.3em] text-vanilla/50">Sınırlı üretim · Istanbul</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-vanilla/10 py-10">
+      <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-center text-xs uppercase tracking-[0.3em] text-vanilla/60 md:flex-row">
+        <span>© 2026 Lefendir You</span>
+        <span>Istanbul</span>
+        <span>İz bırakan bir koku</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const header = document.getElementById("site-header");
+    const setHeader = () => {
+      if (window.scrollY > 20) {
+        header.classList.add("bg-black/80", "backdrop-blur", "border-b", "border-vanilla/10", "shadow-[0_10px_30px_rgba(0,0,0,0.35)]");
+      } else {
+        header.classList.remove("bg-black/80", "backdrop-blur", "border-b", "border-vanilla/10", "shadow-[0_10px_30px_rgba(0,0,0,0.35)]");
+      }
+    };
+    window.addEventListener("scroll", setHeader);
+    setHeader();
+  </script>
+</body>
+</html>

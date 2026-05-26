@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lefendir You | İz Bırakan Bir Koku</title>
+  <meta name="description" content="Lefendir You, İstanbul’da doğan ve vanilyanın büyüsünü taşıyan lüks bir Eau de Parfum deneyimi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: "#0a0a0a",
+            gold: "#d4af37",
+            vanilla: "#f3e5ab"
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', "serif"],
+            body: ['"Lato"', "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { --noir:#0a0a0a; --gold:#d4af37; --vanilla:#f3e5ab; }
+    body { background-color: var(--noir); }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        radial-gradient(600px 600px at 10% 10%, rgba(212,175,55,0.12), transparent 60%),
+        radial-gradient(500px 500px at 90% 20%, rgba(243,229,171,0.08), transparent 60%),
+        linear-gradient(120deg, rgba(255,255,255,0.04), transparent 40%);
+      opacity: 0.7;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .mouse-icon {
+      width: 30px;
+      height: 48px;
+      border: 1px solid rgba(243,229,171,0.7);
+      border-radius: 999px;
+      position: relative;
+    }
+    .mouse-icon::after {
+      content: "";
+      width: 4px;
+      height: 10px;
+      background: var(--gold);
+      border-radius: 999px;
+      position: absolute;
+      left: 50%;
+      top: 10px;
+      transform: translateX(-50%);
+      animation: wheel 1.6s ease-in-out infinite;
+    }
+    @keyframes wheel {
+      0% { transform: translate(-50%, 0); opacity: 1; }
+      100% { transform: translate(-50%, 12px); opacity: 0; }
+    }
+  </style>
+</head>
+<body class="font-body text-vanilla antialiased">
+  <div class="relative z-10">
+    <header id="site-header" class="sticky top-0 z-50 bg-transparent transition duration-300">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="WhatsApp Image 2026-05-23 at 14.32.04 (2).jpeg" alt="Lefendir You logo" class="h-10 w-10 rounded-full object-cover ring-1 ring-gold/60">
+          <span class="font-display text-xs uppercase tracking-[0.3em] text-gold">Lefendir You</span>
+        </a>
+        <nav class="flex flex-wrap items-center gap-5 text-[11px] uppercase tracking-[0.3em] text-vanilla/80">
+          <a href="index.html" class="transition hover:text-gold">Home</a>
+          <a href="koleksiyon.html" class="transition hover:text-gold">Koleksiyon</a>
+          <a href="hakkimizda.html" class="transition hover:text-gold">Hakkımızda</a>
+          <a href="iletisim.html" class="transition hover:text-gold">İletişim</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="relative flex h-screen min-h-[720px] items-center justify-center overflow-hidden">
+        <video class="absolute inset-0 h-full w-full object-cover" src="WhatsApp Video 2026-05-23 at 14.32.04.mp4" autoplay muted loop playsinline></video>
+        <div class="absolute inset-0 bg-noir/70"></div>
+        <div class="relative z-10 mx-auto flex h-full max-w-3xl flex-col items-center justify-center px-6 text-center">
+          <img src="WhatsApp Image 2026-05-23 at 14.32.04 (2).jpeg" alt="Lefendir You" class="h-24 w-24 rounded-full object-cover ring-2 ring-gold/70">
+          <h1 class="mt-6 font-display text-4xl uppercase tracking-[0.18em] text-vanilla md:text-6xl">İz Bırakan Bir Koku</h1>
+          <p class="mt-4 text-base text-vanilla/80 md:text-lg">İstanbul’un zarif ışığından doğan Lefendir You, vanilyanın sıcaklığını altın bir imzaya dönüştürür.</p>
+        </div>
+        <div class="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 text-vanilla/70">
+          <div class="mouse-icon"></div>
+          <span class="text-[10px] uppercase tracking-[0.4em]">Scroll to Discover</span>
+        </div>
+      </section>
+
+      <section class="relative py-24">
+        <div class="pointer-events-none absolute -top-24 left-6 h-48 w-48 rounded-full bg-gold/20 blur-3xl"></div>
+        <div class="mx-auto max-w-4xl px-6 text-center">
+          <p class="text-xs uppercase tracking-[0.4em] text-gold">Vanilyanın Büyüsü</p>
+          <h2 class="mt-4 font-display text-3xl text-vanilla md:text-5xl">İlk temas, derin bir iz</h2>
+          <div class="mt-10 space-y-6 text-lg text-vanilla/80">
+            <p class="reveal-line">Lefendir You, seçkin vanilya fasulyelerini İstanbul’un ince zanaatkarlığıyla buluşturarak zamansız bir ihtişam sunar.</p>
+            <p class="reveal-line">Her damla, geceye karışan bir sıcaklık ve ten üzerinde kadife gibi kalan bir zarafet taşır.</p>
+            <p class="reveal-line">Bu koku, hafızada kalan bir yürüyüş gibi; sessiz, etkileyici ve unutulmazdır.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pin-section" class="relative py-24">
+        <div class="pointer-events-none absolute -bottom-24 right-10 h-64 w-64 rounded-full bg-vanilla/10 blur-3xl"></div>
+        <div class="mx-auto grid max-w-6xl gap-12 px-6 lg:grid-cols-2 lg:items-start">
+          <div class="pinned-media overflow-hidden rounded-3xl border border-vanilla/10 shadow-[0_25px_80px_rgba(0,0,0,0.45)]">
+            <img src="WhatsApp Image 2026-05-23 at 14.32.04 (1).jpeg" alt="Lefendir You cinematic shot" class="h-full w-full object-cover">
+          </div>
+          <div class="space-y-10">
+            <div class="feature-card rounded-2xl border border-vanilla/10 bg-white/5 p-6 backdrop-blur">
+              <h3 class="font-display text-2xl text-vanilla">Uzun süren etki</h3>
+              <p class="mt-3 text-vanilla/75">Eau de Parfum yoğunluğu sayesinde, gün boyu tene tutunan derin ve sıcak bir iz bırakır.</p>
+            </div>
+            <div class="feature-card rounded-2xl border border-vanilla/10 bg-white/5 p-6 backdrop-blur">
+              <h3 class="font-display text-2xl text-vanilla">Eşsiz vanilya aroması</h3>
+              <p class="mt-3 text-vanilla/75">Bourbon vanilyası, amber ve tonka ile birleşerek sofistike bir imza yaratır.</p>
+            </div>
+            <div class="feature-card rounded-2xl border border-vanilla/10 bg-white/5 p-6 backdrop-blur">
+              <h3 class="font-display text-2xl text-vanilla">İstanbul’un asaleti</h3>
+              <p class="mt-3 text-vanilla/75">Boğaz’ın serinliği ve tarihi dokunun zarafeti, her notada hissedilir.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative py-24">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="grid items-center gap-12 rounded-3xl border border-vanilla/10 bg-gradient-to-br from-black/80 via-black/60 to-black/90 p-10 lg:grid-cols-[1.1fr_0.9fr]">
+            <img src="WhatsApp Image 2026-05-23 at 14.32.04.jpeg" alt="Lefendir You clean shot" class="h-full w-full rounded-2xl object-cover shadow-[0_25px_80px_rgba(0,0,0,0.5)]">
+            <div>
+              <p class="text-xs uppercase tracking-[0.4em] text-gold">Koleksiyon</p>
+              <h3 class="mt-4 font-display text-3xl text-vanilla md:text-4xl">Lefendir You Eau de Parfum</h3>
+              <p class="mt-4 text-vanilla/75">Vanilyanın sıcak kalbiyle yumuşayan amber ve misk, sofistike bir silüet oluşturur. Şimdi keşfedin.</p>
+              <a href="koleksiyon.html" class="mt-8 inline-flex items-center justify-center rounded-full bg-gold px-8 py-3 text-sm uppercase tracking-[0.3em] text-noir transition hover:brightness-110">Şimdi Keşfet</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-vanilla/10 py-10">
+      <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-center text-xs uppercase tracking-[0.3em] text-vanilla/60 md:flex-row">
+        <span>© 2026 Lefendir You</span>
+        <span>Istanbul</span>
+        <span>İz bırakan bir koku</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script>
+    const header = document.getElementById("site-header");
+    const setHeader = () => {
+      if (window.scrollY > 20) {
+        header.classList.add("bg-black/80", "backdrop-blur", "border-b", "border-vanilla/10", "shadow-[0_10px_30px_rgba(0,0,0,0.35)]");
+      } else {
+        header.classList.remove("bg-black/80", "backdrop-blur", "border-b", "border-vanilla/10", "shadow-[0_10px_30px_rgba(0,0,0,0.35)]");
+      }
+    };
+    window.addEventListener("scroll", setHeader);
+    setHeader();
+
+    gsap.registerPlugin(ScrollTrigger);
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (!reduceMotion) {
+      gsap.utils.toArray(".reveal-line").forEach((line) => {
+        gsap.from(line, {
+          opacity: 0,
+          y: 28,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: line,
+            start: "top 85%"
+          }
+        });
+      });
+
+      gsap.utils.toArray(".feature-card").forEach((card, i) => {
+        gsap.from(card, {
+          opacity: 0,
+          y: 24,
+          duration: 0.9,
+          delay: i * 0.05,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: card,
+            start: "top 85%"
+          }
+        });
+      });
+
+      const mm = gsap.matchMedia();
+      mm.add("(min-width: 1024px)", () => {
+        ScrollTrigger.create({
+          trigger: "#pin-section",
+          start: "top top+=80",
+          end: "bottom top",
+          pin: ".pinned-media",
+          pinSpacing: true,
+          anticipatePin: 1
+        });
+      });
+    }
+
+    window.addEventListener("load", () => ScrollTrigger.refresh());
+  </script>
+</body>
+</html>

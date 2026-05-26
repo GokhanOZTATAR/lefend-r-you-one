@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lefendir You | İletişim</title>
+  <meta name="description" content="Lefendir You iletişim: İstanbul merkezli lüks parfüm evi. İletişim formu ve WhatsApp üzerinden sipariş.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: "#0a0a0a",
+            gold: "#d4af37",
+            vanilla: "#f3e5ab"
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', "serif"],
+            body: ['"Lato"', "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { --noir:#0a0a0a; --gold:#d4af37; --vanilla:#f3e5ab; }
+    body { background-color: var(--noir); }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        radial-gradient(500px 500px at 80% 10%, rgba(212,175,55,0.12), transparent 60%),
+        radial-gradient(600px 600px at 15% 35%, rgba(243,229,171,0.08), transparent 60%),
+        linear-gradient(120deg, rgba(255,255,255,0.03), transparent 40%);
+      opacity: 0.7;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .fade-up {
+      animation: fadeUp 1.1s ease-out both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="font-body text-vanilla antialiased">
+  <div class="relative z-10">
+    <header id="site-header" class="sticky top-0 z-50 bg-transparent transition duration-300">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="WhatsApp Image 2026-05-23 at 14.32.04 (2).jpeg" alt="Lefendir You logo" class="h-10 w-10 rounded-full object-cover ring-1 ring-gold/60">
+          <span class="font-display text-xs uppercase tracking-[0.3em] text-gold">Lefendir You</span>
+        </a>
+        <nav class="flex flex-wrap items-center gap-5 text-[11px] uppercase tracking-[0.3em] text-vanilla/80">
+          <a href="index.html" class="transition hover:text-gold">Home</a>
+          <a href="koleksiyon.html" class="transition hover:text-gold">Koleksiyon</a>
+          <a href="hakkimizda.html" class="transition hover:text-gold">Hakkımızda</a>
+          <a href="iletisim.html" class="transition hover:text-gold">İletişim</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="relative py-20">
+        <div class="mx-auto max-w-4xl px-6 text-center">
+          <div class="fade-up">
+            <p class="text-xs uppercase tracking-[0.4em] text-gold">İletişim</p>
+            <h1 class="mt-4 font-display text-4xl text-vanilla md:text-5xl">Minimal, net ve kişisel</h1>
+            <p class="mt-4 text-vanilla/80">İstanbul’daki ekibimiz, size özel bir deneyim hazırlamak için hazır.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative py-16">
+        <div class="mx-auto grid max-w-5xl gap-12 px-6 lg:grid-cols-[1fr_1.2fr]">
+          <div class="rounded-3xl border border-vanilla/10 bg-white/5 p-8">
+            <h2 class="font-display text-2xl text-vanilla">İstanbul</h2>
+            <p class="mt-3 text-vanilla/70">Türkiye</p>
+            <p class="mt-8 text-sm uppercase tracking-[0.3em] text-vanilla/50">Randevu ve sipariş</p>
+            <a href="https://wa.me/905465567981?text=Merhaba,%20Lefendir%20You%20parf%C3%BCm%20sipari%C5%9Fi%20vermek%20istiyorum." class="mt-4 inline-flex w-full items-center justify-center rounded-full bg-gold px-6 py-3 text-sm uppercase tracking-[0.3em] text-noir transition hover:brightness-110">WhatsApp ile Yazın</a>
+          </div>
+          <div class="rounded-3xl border border-vanilla/10 bg-black/60 p-8">
+            <form action="#" method="post" class="space-y-6">
+              <div>
+                <label for="name" class="text-xs uppercase tracking-[0.3em] text-vanilla/60">Ad Soyad</label>
+                <input id="name" name="name" type="text" class="mt-2 w-full rounded-2xl border border-vanilla/10 bg-black/40 px-4 py-3 text-vanilla placeholder:text-vanilla/40 focus:border-gold focus:outline-none" placeholder="Adınız ve soyadınız">
+              </div>
+              <div>
+                <label for="email" class="text-xs uppercase tracking-[0.3em] text-vanilla/60">E-posta</label>
+                <input id="email" name="email" type="email" class="mt-2 w-full rounded-2xl border border-vanilla/10 bg-black/40 px-4 py-3 text-vanilla placeholder:text-vanilla/40 focus:border-gold focus:outline-none" placeholder="ornek@mail.com">
+              </div>
+              <div>
+                <label for="message" class="text-xs uppercase tracking-[0.3em] text-vanilla/60">Mesaj</label>
+                <textarea id="message" name="message" rows="5" class="mt-2 w-full rounded-2xl border border-vanilla/10 bg-black/40 px-4 py-3 text-vanilla placeholder:text-vanilla/40 focus:border-gold focus:outline-none" placeholder="Özel notlarınızı paylaşın"></textarea>
+              </div>
+              <button type="submit" class="w-full rounded-full border border-gold px-6 py-3 text-sm uppercase tracking-[0.3em] text-gold transition hover:bg-gold hover:text-noir">Mesaj Gönder</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-vanilla/10 py-10">
+      <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-center text-xs uppercase tracking-[0.3em] text-vanilla/60 md:flex-row">
+        <span>© 2026 Lefendir You</span>
+        <span>Istanbul</span>
+        <span>İz bırakan bir koku</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const header = document.getElementById("site-header");
+    const setHeader = () => {
+      if (window.scrollY > 20) {
+        header.classList.add("bg-black/80", "backdrop-blur", "border-b", "border-vanilla/10", "shadow-[0_10px_30px_rgba(0,0,0,0.35)]");
+      } else {
+        header.classList.remove("bg-black/80", "backdrop-blur", "border-b", "border-vanilla/10", "shadow-[0_10px_30px_rgba(0,0,0,0.35)]");
+      }
+    };
+    window.addEventListener("scroll", setHeader);
+    setHeader();
+  </script>
+</body>
+</html>
